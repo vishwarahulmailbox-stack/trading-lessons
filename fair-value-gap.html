@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fair Value Gaps · Trader's Notebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="fair-value-gap">
+<aside id="sidebar"></aside>
+<main class="main"><article class="content">
+<header class="lesson-head">
+  <div class="kicker">Lesson 10 · Zones & Concepts · Notes Q8 · 18 Aug 2026</div>
+  <h1>Fair Value Gaps (FVG)</h1>
+  <p class="lede">A fair value gap is the visible footprint of an imbalance: a spot where price moved so fast that only one side traded. Markets tend to come back and rebalance it.</p>
+  <ul class="toc"><li><a href="#what">What it is</a></li><li><a href="#find">Find one, step by step</a></li><li><a href="#why">Why price returns</a></li><li><a href="#use">How to use it</a></li><li><a href="#mistakes">Mistakes</a></li></ul>
+</header>
+
+<h2 id="what"><span class="hn">1</span>What is a fair value gap?</h2>
+<div class="callout note"><div class="c-h">📓 From your notes</div><p>Also called as Imbalance or Inefficiency. We expect market to pull back at the FVG range. Alone FVG is not complete for setup, should be combined with other parameters.</p></div>
+<p>An FVG is a <b>three candle pattern</b>. The middle candle is big and aggressive. If the wick of candle 1 and the wick of candle 3 do <b>not overlap</b>, the empty space between them is the fair value gap. In that space, price moved in one direction only: buyers (or sellers) never got a chance to trade the other way.</p>
+
+<h2 id="find"><span class="hn">2</span>Find one, candle by candle</h2>
+<figure class="fig"><div data-dg="fvg"></div><figcaption><b>Step through it.</b> Bullish FVG: gap between candle 1's high and candle 3's low. Bearish FVG: gap between candle 1's low and candle 3's high.</figcaption></figure>
+<div class="tbl-wrap"><table class="tbl"><tr><th></th><th>Bullish FVG</th><th>Bearish FVG</th></tr>
+<tr><td>Middle candle</td><td>Big bullish candle</td><td>Big bearish candle</td></tr>
+<tr><td>Condition</td><td>Candle 3 low &gt; candle 1 high</td><td>Candle 3 high &lt; candle 1 low</td></tr>
+<tr><td>Gap</td><td>From candle 1 high up to candle 3 low</td><td>From candle 3 high up to candle 1 low</td></tr>
+<tr><td>Acts as</td><td>Support (buy area) on the return</td><td>Resistance (sell area) on the return</td></tr></table></div>
+
+<h2 id="why"><span class="hn">3</span>Why price comes back</h2>
+<p>Remember lesson 1: the market always seeks balance. Inside an FVG, there was no two-sided trading, so the price there is not yet "fair". Price often returns to <b>rebalance</b>: to let the other side trade there and to fill orders that were missed in the rush.</p>
+<figure class="fig"><div data-dg="fvg-return"></div><figcaption><b>Return and continue.</b> Price rallies leaving an FVG, pulls back into it (often to its 50% level), then continues.</figcaption></figure>
+<div class="callout tip"><div class="c-h">💡 Consequent encroachment (CE)</div><p>The <b>50% level of an FVG</b> is called consequent encroachment. Strong FVGs often hold at or above their CE. If price closes fully through the FVG, it has failed, and that is information too (the imbalance has been rejected).</p></div>
+
+<h2 id="use"><span class="hn">4</span>How to use an FVG (it is not a setup on its own)</h2>
+<p>Your note is very important: an FVG alone is not complete. FVGs appear everywhere on every timeframe. They become tradeable when they line up with other parameters:</p>
+<div data-dg="checklist" data-items='["FVG is in the direction of the <b>HTF trend</b>","The move that created it <b>broke structure</b> (BOS)","It sits in <b>discount</b> (for buys) or <b>premium</b> (for sells)","It is next to, or on top of, an <b>order block</b> or zone","It formed right after a <b>liquidity sweep</b>","Price returns to it during a <b>kill zone</b>"]' data-ok="<b>Strong FVG.</b> This is worth marking as a POI and waiting for." data-no="An FVG with few confluences is just a gap. Look for more reasons."></div>
+
+<h2 id="mistakes"><span class="hn">5</span>Common mistakes</h2>
+<div class="cards">
+  <div class="card down"><h4>Trading every gap</h4><p>Lower timeframes are full of FVGs. Without structure and context most of them fail.</p></div>
+  <div class="card down"><h4>Using wicks vs bodies inconsistently</h4><p>Measure from wick to wick (candle 1 wick, candle 3 wick). Be consistent.</p></div>
+  <div class="card down"><h4>Ignoring already-filled gaps</h4><p>Once price has traded through the whole gap, it is balanced. It no longer has the same pull.</p></div>
+</div>
+<div class="callout key"><div class="c-h">✅ Key takeaways</div><ul>
+<li>FVG = 3 candles where wicks of candle 1 and 3 do not overlap.</li>
+<li>It shows an imbalance; price tends to return to rebalance it.</li>
+<li>The 50% level (CE) is a key reaction point.</li>
+<li>An FVG needs confluence: trend, BOS, discount/premium, OB, liquidity sweep.</li></ul></div>
+
+<script type="application/json" id="quiz-data">[
+{"q":"Candle 1 high = 1.1020, candle 2 is big bullish, candle 3 low = 1.1045. Is there an FVG?","o":["No","Yes, a bullish FVG from 1.1020 to 1.1045","Yes, a bearish FVG","Only if candle 3 is red"],"a":1,"w":"Candle 3 low is above candle 1 high, so the 25 pip space between them is a bullish FVG."},
+{"q":"What are two other names for an FVG in the notes?","o":["Trend and range","Imbalance and inefficiency","Support and resistance","Pip and lot"],"a":1,"w":"FVG = imbalance = inefficiency."},
+{"q":"What does consequent encroachment (CE) mean?","o":["The top of the FVG","The 50% midpoint of the FVG","The stop loss","A news release"],"a":1,"w":"CE is the middle of the gap, a common reaction level."},
+{"q":"According to the notes, is an FVG enough on its own to take a trade?","o":["Yes, always","No, it must be combined with other parameters","Only on the 1 minute chart","Only for sells"],"a":1,"w":"Alone FVG is not complete for a setup."},
+{"q":"Why does price often return to an FVG?","o":["Because brokers move it","To rebalance an area where only one side traded","Because of the weekend","It never returns"],"a":1,"w":"The market seeks balance; the gap was one-sided trading."}
+]</script>
+
+<div id="quiz"></div>
+<div id="pager"></div>
+</article></main>
+<script src="assets/charts.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

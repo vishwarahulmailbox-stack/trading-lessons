@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Risk Management · Trader's Notebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="risk-management">
+<aside id="sidebar"></aside>
+<main class="main"><article class="content">
+<header class="lesson-head">
+  <div class="kicker">Lesson 17 · Execution · Notes Q17 · 17 Sep 2026</div>
+  <h1>Risk Management</h1>
+  <p class="lede">You can be wrong half the time and still grow an account, but only if each loss is small and controlled. This lesson turns the principles in your notes into numbers you can calculate and see.</p>
+  <ul class="toc"><li><a href="#principles">Principles</a></li><li><a href="#rules">Rules</a></li><li><a href="#size">Position size</a></li><li><a href="#dd">Drawdown maths</a></li><li><a href="#be">Win rate vs RR</a></li><li><a href="#sim">Simulator</a></li><li><a href="#rails">Guardrails</a></li></ul>
+</header>
+
+<h2 id="principles"><span class="hn">1</span>The five principles</h2>
+<div class="callout note"><div class="c-h">📓 From your notes</div><p>Principles: 1) Protect your capital first 2) Define your risk before every trade 3) Keep risk consistent 4) Use guide rail to control yourself 5) Think in probabilities, not certainty.</p></div>
+<div class="cards">
+  <div class="card up"><h4>1. Protect capital first</h4><p>No capital, no trading. Survival comes before growth.</p></div>
+  <div class="card blue"><h4>2. Define risk before every trade</h4><p>You know the stop and the dollar amount before you enter.</p></div>
+  <div class="card acc"><h4>3. Keep risk consistent</h4><p>Same % on every trade. Otherwise one big loss erases ten small wins.</p></div>
+  <div class="card pur"><h4>4. Use guardrails</h4><p>Hard limits that stop you even when emotions say "one more".</p></div>
+  <div class="card down"><h4>5. Probabilities, not certainty</h4><p>Any single trade can lose. Your edge only shows over many trades.</p></div>
+</div>
+
+<h2 id="rules"><span class="hn">2</span>The five risk rules</h2>
+<div class="callout note"><div class="c-h">📓 From your notes</div><p>Risk rules: 1) Risk a fixed % per trade 2) Set a max daily trade 3) Respect your max drawdown 4) Limit total trade per day 5) Only risk on A+ setup.</p></div>
+<div class="tbl-wrap"><table class="tbl"><tr><th>Rule</th><th>Typical starting value*</th><th>Why</th></tr>
+<tr><td>Fixed % per trade</td><td>0.5% to 1% of the account</td><td>10 losses in a row only costs about 10%</td></tr>
+<tr><td>Max daily loss</td><td>2% to 3%, or 2 losing trades</td><td>Stops a bad day becoming a disaster</td></tr>
+<tr><td>Max drawdown</td><td>e.g. stop and review at -6% to -10%</td><td>Forces a review before the hole gets deep</td></tr>
+<tr><td>Max trades per day</td><td>2 to 3</td><td>Prevents overtrading and boredom trades</td></tr>
+<tr><td>Only A+ setups</td><td>Checklist fully ticked</td><td>B and C setups dilute the edge</td></tr></table></div>
+<p class="mut" style="font-size:13px">*Common starting points, not personal advice. Choose values you can follow every day, then refine them with your journal.</p>
+
+<h2 id="size"><span class="hn">3</span>Position size calculator</h2>
+<p>"Risk a fixed %" only works if the position size changes with the stop distance. A wide stop means a smaller position; a tight stop allows a bigger one. The dollar risk stays the same.</p>
+<div class="formula">Money at risk  = Account × Risk %
+Position (lots) = Money at risk ÷ (Stop loss in pips × Pip value per lot)</div>
+<figure class="fig"><div data-dg="calc"></div><figcaption><b>Interactive.</b> Pip value is about $10 per standard lot on pairs quoted in USD (EUR/USD, GBP/USD). For other pairs check your broker's pip value.</figcaption></figure>
+
+<h2 id="dd"><span class="hn">4</span>Why protecting capital comes first: drawdown maths</h2>
+<figure class="fig"><div data-dg="drawdown"></div><figcaption><b>Losses are asymmetric.</b> Lose 50% and you need +100% just to get back to where you started. Lose 90% and you need +900%.</figcaption></figure>
+<p>This is the whole reason for small, consistent risk. Small losses are easy to recover. Big losses can end a trading career.</p>
+
+<h2 id="be"><span class="hn">5</span>Win rate vs risk to reward</h2>
+<div class="formula">Break-even win rate = 1 ÷ (1 + RR)
+Expectancy (in R)   = (Win rate × RR) − (Loss rate × 1)</div>
+<figure class="fig"><div data-dg="breakeven"></div><figcaption><b>Win rate you need just to break even</b> at each risk to reward. At 1 : 3 you only need to win 25% of the time.</figcaption></figure>
+
+<h2 id="sim"><span class="hn">6</span>Risk simulator: same trades, different risk</h2>
+<p>Below, the exact same sequence of 100 wins and losses is applied with 1%, 2%, 5% and 10% risk per trade. Change the win rate and RR, and roll new sequences. Watch the drawdown numbers.</p>
+<figure class="fig"><div data-dg="risk-sim"></div><figcaption><b>Think in probabilities.</b> Even with a good edge, losing streaks of 5 to 8 trades are normal. Risk size decides whether you survive them.</figcaption></figure>
+
+<h2 id="rails"><span class="hn">7</span>Guardrails: rules that control you</h2>
+<p>Write your guardrails down and put them next to your screen. Example set:</p>
+<div data-dg="checklist" data-items='["I risk the same fixed % on every trade","I stop for the day after 2 losses or my max daily loss","I take at most 3 trades per day","I stop and review if my account drops by my max drawdown","I only trade A+ setups that pass my full checklist","I never move my stop loss further away","I never add to a losing position"]' data-ok="<b>Guardrails set.</b> Process first, profit second." data-no="Tick each guardrail once you have committed to it in writing."></div>
+<div class="callout key"><div class="c-h">✅ Key takeaways</div><ul>
+<li>Risk a small, fixed % per trade and size the position from the stop distance.</li>
+<li>Losses are asymmetric: protect capital first.</li>
+<li>Higher RR lowers the win rate you need; expectancy must be positive.</li>
+<li>Guardrails (daily loss, max trades, max drawdown) protect you from yourself.</li></ul></div>
+
+<script type="application/json" id="quiz-data">[
+{"q":"Account $5,000, risk 1%, stop 25 pips on EUR/USD ($10 per pip per lot). Position size?","o":["2 lots","0.2 lots","0.02 lots","20 lots"],"a":1,"w":"$50 ÷ (25 × $10) = 0.2 standard lots."},
+{"q":"After losing 50% of an account, what gain is needed to get back to break-even?","o":["50%","75%","100%","150%"],"a":2,"w":"Half the money must double to return to the start."},
+{"q":"With a 1 : 2 RR, what win rate is needed to break even?","o":["50%","33%","25%","66%"],"a":1,"w":"1 ÷ (1 + 2) ≈ 33%."},
+{"q":"Win rate 40%, RR 1 : 2. What is the expectancy per trade?","o":["-0.2R","+0.2R","+0.8R","0R"],"a":1,"w":"0.4 × 2 − 0.6 × 1 = 0.8 − 0.6 = +0.2R."},
+{"q":"Why keep risk consistent instead of risking more on trades you 'feel good about'?","o":["It is required by law","Your feeling is not a measured edge, and one oversized loss can wipe out many small wins","It makes charts look better","Brokers charge less"],"a":1,"w":"Principle 3 and 5: consistent risk, thinking in probabilities."}
+]</script>
+
+<div id="quiz"></div>
+<div id="pager"></div>
+</article></main>
+<script src="assets/charts.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

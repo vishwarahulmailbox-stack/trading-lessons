@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home · Trader's Notebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="index">
+<aside id="sidebar"></aside>
+<main class="main"><article class="content">
+<section class="hero">
+  <div class="kicker">A complete tutorial built from your trading notebook</div>
+  <h1>Learn to read price like <span>the big players do</span></h1>
+  <p class="lede">Seventeen lessons that turn handwritten notes into a clear path: how price moves, market structure, supply and demand, order blocks, fair value gaps, liquidity, kill zones, daily bias and risk management. Every idea comes with a chart, an interactive diagram or a worked example.</p>
+  <div class="hero-chart" data-dg="hero"></div>
+  <div class="hero-cta"><a class="btn" href="price-movement.html">Start lesson 1 →</a><a class="btn ghost" href="cheat-sheet.html">Open the cheat sheet</a></div>
+</section>
+
+<h2>How to use this site</h2>
+<div class="cards">
+  <div class="card blue"><span class="ic">📓</span><h4>Your notes, kept</h4><p>Blue "From your notes" boxes show what you wrote. Everything around them explains it in more depth.</p></div>
+  <div class="card acc"><span class="ic">🛠</span><h4>Corrections flagged</h4><p>Where a note was incomplete or slightly off (for example kill zone times), an amber box explains the fix.</p></div>
+  <div class="card pur"><span class="ic">🎛</span><h4>Play with the charts</h4><p>Drag sliders, step through setups candle by candle and tick checklists. Learning by doing sticks.</p></div>
+  <div class="card up"><span class="ic">🧠</span><h4>Quiz at the end</h4><p>Each lesson ends with a short quiz. Answer everything correctly and the lesson is marked complete.</p></div>
+</div>
+
+<h2>The big picture first</h2>
+<p>Your notes start the Market Structure chapter with a pyramid. It is the best map of this whole course: each layer depends on the one below it. You learn from the bottom up, and profit sits at the top as the <b>result</b>, never the starting point. Tap any layer.</p>
+<figure class="fig"><div data-dg="pyramid"></div><figcaption><b>The trading pyramid.</b> Market structure → supply and demand → liquidity → entries and exits → psychology → profit.</figcaption></figure>
+
+<h2>The whole method in one story</h2>
+<ol class="timeline">
+  <li><span class="tn">1</span><b>Price moves because of liquidity</b><span>Orders are the fuel. Price swings between balance (range) and imbalance (strong moves).</span></li>
+  <li><span class="tn">2</span><b>Read the structure</b><span>Is it trending up, down, or ranging? Where are the highs and lows? Is this a pullback or a reversal?</span></li>
+  <li><span class="tn">3</span><b>Go top down</b><span>HTF tells you who is in control, MTF tells you where to enter, LTF tells you when.</span></li>
+  <li><span class="tn">4</span><b>Find the zone</b><span>Supply and demand, order blocks, fair value gaps and flip zones, located in discount (buys) or premium (sells).</span></li>
+  <li><span class="tn">5</span><b>Know where the money is</b><span>Liquidity above highs and below lows: it is both a trap to avoid and a target to aim for.</span></li>
+  <li><span class="tn">6</span><b>Trade at the right time</b><span>Kill zones and a clear daily bias with an invalidation level.</span></li>
+  <li><span class="tn">7</span><b>Protect the account</b><span>Fixed risk per trade, stop below the zone, target at liquidity, process before profit.</span></li>
+</ol>
+
+<h2>All lessons</h2>
+<div id="lesson-grid" class="lesson-grid"></div>
+
+<div id="quiz"></div>
+<div id="pager"></div>
+</article></main>
+<script src="assets/charts.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Premium & Discount · Trader's Notebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="premium-discount">
+<aside id="sidebar"></aside>
+<main class="main"><article class="content">
+<header class="lesson-head">
+  <div class="kicker">Lesson 9 · Zones & Concepts · Notes Q7 · 18 Aug 2026</div>
+  <h1>Premium & Discount</h1>
+  <p class="lede">Split any swing in half. The top half is expensive, the bottom half is cheap. Smart money buys cheap and sells expensive. This one idea filters out a huge number of bad trades.</p>
+  <ul class="toc"><li><a href="#idea">The idea</a></li><li><a href="#try">Try it</a></li><li><a href="#draw">How to draw it</a></li><li><a href="#context">With the trend</a></li><li><a href="#ote">Going deeper</a></li></ul>
+</header>
+
+<h2 id="idea"><span class="hn">1</span>Cheap and expensive</h2>
+<div class="callout note"><div class="c-h">📓 From your notes</div><p>Always buy, when the price is in 50% Discount Range. Always sell, when the price is in 50% Premimum Range.</p></div>
+<div class="callout analogy"><div class="c-h">🛒 Analogy</div><p>A pair of shoes swung between $60 and $100 this year. At $95 you would wait for a sale. At $65 you would buy. You do not know the "right" price, but you know where the cheap half and the expensive half are. Premium and discount apply the same logic to every swing on the chart.</p></div>
+
+<h2 id="try"><span class="hn">2</span>Try it: where is price now?</h2>
+<figure class="fig"><div data-dg="pd"></div><figcaption><b>Interactive.</b> Move the slider to place current price inside the swing. The equilibrium (50%) line splits premium from discount.</figcaption></figure>
+
+<h2 id="draw"><span class="hn">3</span>How to draw it</h2>
+<ol class="timeline">
+  <li><span class="tn">1</span><b>Pick the swing (dealing range)</b><span>In an uptrend, from the swing low that started the last leg up to the latest swing high. In a downtrend, from the swing high to the swing low.</span></li>
+  <li><span class="tn">2</span><b>Use the Fibonacci tool</b><span>Draw from low to high (uptrend). Keep only the levels 0, 0.5 and 1 to keep it clean. Many traders add 0.62 and 0.79 (see below).</span></li>
+  <li><span class="tn">3</span><b>Read the halves</b><span>Below 0.5 = discount. Above 0.5 = premium. Exactly 0.5 = equilibrium.</span></li>
+  <li><span class="tn">4</span><b>Redraw after a new BOS</b><span>When structure breaks, a new swing exists, so the range moves.</span></li>
+</ol>
+<div class="formula"><span class="c">// Equilibrium (50%) of a swing</span>
+EQ = (Swing High + Swing Low) ÷ 2
+<span class="c">// example: high 1.1000, low 1.0800</span>
+EQ = (1.1000 + 1.0800) ÷ 2 = 1.0900   → buys below 1.0900, sells above</div>
+
+<h2 id="context"><span class="hn">4</span>"Always" means: in line with the trend</h2>
+<div class="callout fix"><div class="c-h">🛠 Important nuance</div><p>The rule "always buy in discount" works <b>when the higher timeframe is bullish</b>. In a strong downtrend, price will sit in discount for a long time and keep falling. The full rule is: <b>decide the direction with structure first, then only take that direction from the correct half.</b></p></div>
+<div class="tbl-wrap"><table class="tbl"><tr><th>HTF trend</th><th>Price in discount</th><th>Price in premium</th></tr>
+<tr><td class="up">Bullish</td><td><b class="up">Look for buys</b> (OBs, demand, FVGs)</td><td>Do not buy. Wait. Maybe take profit.</td></tr>
+<tr><td class="down">Bearish</td><td>Do not sell. Wait. Maybe take profit.</td><td><b class="down">Look for sells</b> (OBs, supply, FVGs)</td></tr>
+<tr><td>Ranging</td><td>Buy near range low (with confirmation)</td><td>Sell near range high (with confirmation)</td></tr></table></div>
+<p>Your notes connect premium and discount to many other rules: a valid <a href="order-blocks.html">order block</a> must be in discount (buys) or premium (sells), the <a href="supply-demand.html">50% of a zone</a> rule uses the same idea, and the <a href="daily-bias.html">daily bias</a> process says "buy at discount, sell at premium". It also explains the rule "do not trade mid range": at equilibrium you have no price advantage either way.</p>
+
+<h2 id="ote"><span class="hn">5</span>Going deeper: the optimal trade entry</h2>
+<div class="callout tip"><div class="c-h">💡 Not in your notes, but widely used</div><p>Many smart money traders look for entries in the <b>0.62 to 0.79</b> area of the swing (often called the Optimal Trade Entry, OTE). It is deep enough in discount to give a great price, but not so deep that the swing low is likely to break. Combine it with an OB or FVG sitting in that area.</p></div>
+<div class="callout key"><div class="c-h">✅ Key takeaways</div><ul>
+<li>Split the current swing at 50%. Lower half = discount, upper half = premium.</li>
+<li>In an uptrend, buy only in discount. In a downtrend, sell only in premium.</li>
+<li>Avoid trading at equilibrium (mid range).</li>
+<li>Redraw the range after every new break of structure.</li></ul></div>
+
+<script type="application/json" id="quiz-data">[
+{"q":"Swing low 1.2000, swing high 1.2200. Where is equilibrium?","o":["1.2050","1.2100","1.2150","1.2200"],"a":1,"w":"(1.2200 + 1.2000) ÷ 2 = 1.2100."},
+{"q":"Bullish HTF, price is at 1.2170 in the swing above. What should you do?","o":["Buy aggressively","Do not buy: price is in premium. Wait for discount","Sell because premium always means sell","Buy double size"],"a":1,"w":"In an uptrend you buy in discount. Premium in an uptrend is a place to wait or take profit."},
+{"q":"Why do the notes say not to trade mid range?","o":["Spreads are higher","At equilibrium there is no price advantage and price is choppy","It is illegal","Charts don't show it"],"a":1,"w":"No edge in price, lots of noise."},
+{"q":"When should you redraw your premium/discount range?","o":["Never","After a new break of structure creates a new swing","Every candle","Only on Sundays"],"a":1,"w":"A new swing high or low means a new dealing range."},
+{"q":"A valid buy order block should sit in...","o":["Premium","Discount","Exactly at the swing high","Anywhere"],"a":1,"w":"Rule 3 of a valid OB: discount for buys, premium for sells."}
+]</script>
+
+<div id="quiz"></div>
+<div id="pager"></div>
+</article></main>
+<script src="assets/charts.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

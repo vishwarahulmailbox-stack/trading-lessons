@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Candlesticks · Trader's Notebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="candlesticks">
+<aside id="sidebar"></aside>
+<main class="main"><article class="content">
+<header class="lesson-head">
+  <div class="kicker">Lesson 6 · Reading the Chart · Notes Q5 · 14 Aug 2026</div>
+  <h1>Japanese Candlesticks & Heikin Ashi</h1>
+  <p class="lede">Every candle is a small story of a battle between buyers and sellers. Learn to read the body and the wicks, why higher timeframe candles matter more, and when the smoothed Heikin Ashi candle helps.</p>
+  <ul class="toc"><li><a href="#anatomy">Anatomy</a></li><li><a href="#body">Body vs wick</a></li><li><a href="#ha">Heikin Ashi</a></li><li><a href="#rules">The 5 rules</a></li></ul>
+</header>
+
+<h2 id="anatomy"><span class="hn">1</span>Anatomy of a candle</h2>
+<figure class="fig"><div data-dg="candle-anatomy"></div><figcaption><b>Four prices per candle:</b> open, high, low, close. Green (bullish) closes above its open, red (bearish) closes below.</figcaption></figure>
+<p>A candle covers one period: one minute on the 1M chart, one day on the Daily. The <b>body</b> shows where price opened and closed: who won the period. The <b>wicks</b> (shadows) show how far price travelled and got rejected: where one side tried and failed.</p>
+
+<h2 id="body"><span class="hn">2</span>Compare the body with the wick: it matters</h2>
+<div class="callout note"><div class="c-h">📓 From your notes</div><p>1) Compare body with wick, it matters.</p></div>
+<figure class="fig"><div data-dg="candle-types"></div><figcaption><b>Four shapes, four messages.</b> The ratio of body to wick tells you how decisive the period was.</figcaption></figure>
+<div class="tbl-wrap"><table class="tbl"><tr><th>What you see</th><th>What it tells you</th></tr>
+<tr><td>Big body, small wicks</td><td>Strong conviction. One side controlled the whole period. Often the start of an expansion or an imbalance.</td></tr>
+<tr><td>Small body, long wicks both sides</td><td>Indecision. Balance. Both sides tried and failed.</td></tr>
+<tr><td>Long wick on one side</td><td>Rejection. Price went there and was pushed back hard. At a zone or liquidity level, this is a strong clue.</td></tr>
+<tr><td>Bodies getting smaller in a trend</td><td>Momentum fading. Possible consolidation or reversal coming.</td></tr></table></div>
+<div class="callout warn"><div class="c-h">⚠️ Context first</div><p>A hammer in the middle of nowhere means very little. The same hammer after a sweep of an old low, inside a demand zone, in discount, is a powerful signal. Your second rule says it: never lose the context.</p></div>
+
+<h2 id="ha"><span class="hn">3</span>Heikin Ashi</h2>
+<div class="callout note"><div class="c-h">📓 From your notes</div><p>Q5: Japanese candlesticks. Ans: Heiken Aishi.</p></div>
+<div class="callout fix"><div class="c-h">🛠 Spelling and meaning</div><p>The usual spelling is <b>Heikin Ashi</b> (Japanese for "average bar"). It is a <i>variation</i> of Japanese candlesticks, not the same thing. It averages prices to filter out noise.</p></div>
+<div class="formula">HA Close = (Open + High + Low + Close) ÷ 4
+HA Open  = (previous HA Open + previous HA Close) ÷ 2
+HA High  = highest of (High, HA Open, HA Close)
+HA Low   = lowest of (Low, HA Open, HA Close)</div>
+<figure class="fig"><div data-dg="heikin"></div><figcaption><b>Same price data, two views.</b> Heikin Ashi turns choppy candles into clean runs of one colour.</figcaption></figure>
+<div class="cards">
+  <div class="card up"><h4>Use Heikin Ashi to...</h4><p>See the trend at a glance, stay in a trade during a strong move, avoid panicking on one red candle.</p></div>
+  <div class="card down"><h4>Do not use it to...</h4><p>Place entries, stops or zones. HA prices are averages, not real traded prices. FVGs, order blocks and wicks must be read on normal candles.</p></div>
+</div>
+
+<h2 id="rules"><span class="hn">4</span>The 5 candle rules from your notes</h2>
+<ol class="qs">
+  <li><b>Compare body with wick, it matters.</b><span>Body = who won. Wick = where someone got rejected.</span></li>
+  <li><b>Never lose the context of the market.</b><span>Trend, zone, premium/discount and liquidity give a candle its meaning.</span></li>
+  <li><b>Candles on HTF matter more than LTF (most important).</b><span>A daily rejection wick involves far more money than a 1 minute one. Read the big candle first.</span></li>
+  <li><b>Listen to the market, it shows an art (kala).</b><span>Reading candles is a skill built by screen time. Watch how price behaves at levels, not just where it ends up.</span></li>
+  <li><b>Price itself is the live indicator.</b><span>Indicators are calculated from price and lag behind it. Raw price action is the fastest information you have.</span></li>
+</ol>
+<h3>Why the higher timeframe candle wins</h3>
+<figure class="fig"><div data-dg="htf-ltf"></div><figcaption><b>One 1H candle = four 15M candles.</b> The 15M pullbacks are invisible on the 1H. "An HTF run is an LTF trend."</figcaption></figure>
+<div class="callout key"><div class="c-h">✅ Key takeaways</div><ul>
+<li>Body shows who won, wicks show rejection. Compare them.</li>
+<li>Candle signals only count in context (zone, trend, liquidity).</li>
+<li>Higher timeframe candles carry more weight.</li>
+<li>Heikin Ashi is great for seeing trend, but use real candles for levels and entries.</li></ul></div>
+
+<script type="application/json" id="quiz-data">[
+{"q":"A candle opens at 1.1000, rises to 1.1050, drops to 1.0950 and closes at 1.1040. What kind of candle is it?","o":["Bearish with a long upper wick","Bullish with a longer lower wick than upper wick","Doji","Bearish marubozu"],"a":1,"w":"Close above open = bullish. Lower wick 50 pips (1.1000 to 1.0950), upper wick 10 pips."},
+{"q":"What does a long lower wick at a demand zone suggest?","o":["Sellers are in full control","Price was pushed down but buyers rejected it strongly","Nothing at all","The market is closed"],"a":1,"w":"A long lower wick shows rejection of lower prices, especially meaningful at a zone."},
+{"q":"Why should you not place stop losses using Heikin Ashi prices?","o":["They are too colourful","They are averaged values, not real traded prices","They only work on Mondays","They hide the trend"],"a":1,"w":"HA smooths prices with averages; levels must come from real candles."},
+{"q":"Which candle carries more information?","o":["A 1 minute candle","A daily candle","They are equal","Whichever is green"],"a":1,"w":"Rule 3: HTF candles matter more than LTF."},
+{"q":"How is the Heikin Ashi close calculated?","o":["Same as the normal close","(Open + High + Low + Close) ÷ 4","High minus low","Previous close × 2"],"a":1,"w":"It is the average of the four prices of the period."}
+]</script>
+
+<div id="quiz"></div>
+<div id="pager"></div>
+</article></main>
+<script src="assets/charts.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
